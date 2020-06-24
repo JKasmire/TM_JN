@@ -135,3 +135,11 @@ cl_Doc_set.classify("This is an amazing library!")
 prob_dist = cl.prob_classify("This one's a doozy.")
 
 
+
+print(extracted_persons)
+extracted_persons = []
+for tree in tagged_chunked_data:
+    people = []
+    people.append(tree[0][0])
+    extracted_persons.append(people)
+    
